@@ -1,0 +1,176 @@
+body {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	background-color: #348efe;
+  }
+  
+  section {
+	text-align: center;
+	background-color: white;
+	width: 50%;
+	height: auto;
+	margin: 100px auto;
+	border-radius: 100px;
+  }
+  
+  button,
+  h1 {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+  }
+  
+  h1 {
+	font-family: "Hubballi", cursive;
+	font-size: xx-large;
+	margin: 10px;
+	color: #016ff9;
+  }
+  
+  .sudoku-menu {
+	/* width: 50%; */
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+  }
+  
+  .sudoku-menu button {
+	font-size: 14px;
+	margin: 15px 5px;
+	padding: 5px;
+  }
+  
+  button {
+	background-color: white;
+	border-color: #348efe;
+	border-style: dashed;
+	color: #348efe;
+	padding: auto;
+	border-radius: 600px;
+	width: 120px;
+	height: 40px;
+	font-family: "Smooch Sans", sans-serif;
+	transition: color 0.75s, background-color 0.75s;
+  }
+  
+  button:hover {
+	background-color: #348efe;
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+  }
+  
+  .sudoku-container {
+	border: 1px solid #84b1e9;
+	border-radius: 6%;
+	width: 413px;
+	margin: 20px auto;
+  }
+  
+  .sudoku-container td {
+	margin: 0;
+  }
+  
+  .sudoku-container input {
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	font-size: 20px;
+	padding: 0;
+	border: 0.5px #ccc solid;
+	border-radius: 60%;
+	background: transparent;
+  }
+  
+  .sudoku-container .sudoku-input-error {
+	background: #ffc9d7;
+  }
+  .sudoku-container.valid-matrix {
+	border: 5px solid #7edb37;
+  }
+  
+  .sudoku-section-one input {
+	background-color: #e7f1ff;
+  }
+
+  @media screen and (max-width: 860px) {
+	section {
+		width: 70%;
+	}
+	button {
+		width: auto;
+	}
+	.sudoku-container {
+		width: 50%;
+	}
+  }
+
+  @media screen and (max-width: 620px) {
+	section {
+		width: 100%;
+	}
+	button {
+		width: auto;
+	}
+	.sudoku-container {
+		width: 50%;
+	}
+  }
+
+  @media screen and (max-width: 440px) {
+	section {
+		width: 100%;
+	}
+	button {
+		width: auto;
+	}
+	.sudoku-container {
+		width: 100%;
+	}
+	tbody {
+		width: 100%;
+	}
+	tr {
+		width: 100%;
+	}
+
+	td {
+		width: 100%;
+	}
+  }
+
+  #hamburger-btn {
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+	float: left;
+	left: 4px;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: #fff;
+	vertical-align: middle;
+	padding: 0 22px;
+	transition: all 0.5s;
+	height: auto;
+	width: auto;
+  }
+
+  #go-back {
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+	font-weight: 700;
+	display: block;
+	color: #333;
+	background: #0000;
+	padding: 15px 0 15px 22px;
+	letter-spacing: 1.1px;
+	outline: none;
+	border: none;
+	width: 100%;
+	text-align: left;
+	margin: 0 !important;
+  }
